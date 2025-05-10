@@ -1,0 +1,5 @@
+set up email command
+git config --global user.email "susan123@gmail.com"
+
+set up name command
+git config --global user.name "susan"
