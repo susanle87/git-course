@@ -1,5 +1,14 @@
-lệnh: 
+1. lệnh: 
 - git init: Khởi tạo một repository quản lí bởi git trên máy cá nhân (add in working directory)
 -git add <file_name>: Add 1 file vào staging area
 - git add .: Add tất cả file vào staging area
 - git commit -m “message”: đưa tất cả các file dc từ staging area to  với nội dung  trong message (rõ ràng hơn)
+
+2. 
+Steps	                            Working Directory	      Staging Area	    Repository
+a. Tạo file1, file2, file3	        file1, file2, file3	       Blank	           Blank	 
+b. git init	                        file1, file2, file3        Blank	           Blank	 
+c. git commit -m "init project"	    file1, file2, file3	       Blank	         Commit 1: "init project" (Blank vì chưa add file nào)
+d. git add file1	                file1, file2, file3	       file1	         Commit 1: "init project"
+e. git commit -m "add file1"	    file1, file2, file3	       Blank	         Commit 1: "add file1" (Chỉ file1 được commit)
+f. git add file	                    file1, file2, file3	       Blank	         Commit 1: "add file1"
